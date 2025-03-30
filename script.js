@@ -2,7 +2,9 @@ async function loadConfig() {
     const response = await fetch('config.txt');
     const value = await response.text();
 
-    return value;
+    let result = value.replace(/\n/g, '');
+
+    return result;
   }
 document.addEventListener('DOMContentLoaded', function() {
     var calendarEl = document.getElementById('calendar');
