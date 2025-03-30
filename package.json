@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "fullcalendar": "^6.1.15"
+  }
+}
