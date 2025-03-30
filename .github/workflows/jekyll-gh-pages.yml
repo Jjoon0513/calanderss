@@ -38,7 +38,7 @@ jobs:
         run: npm install fullcalendar
 
       - name: 비밀임미다
-        run: echo "SCHL_KEY=${{ secrets.SCHL_KEY }}" > config.txt
+        run: echo "${{ secrets.SCHL_KEY }}" > config.txt
         
       - name: 페이지 셋업
         uses: actions/configure-pages@v5
